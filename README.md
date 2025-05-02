@@ -22,7 +22,7 @@ We extend the original work by:
 - transformers==4.13.0
 - numpy==1.22.4  
 - install them with:
-      ```bash
+  ```bash
   pip install -r requirements.txt
    
 ### How to Run
