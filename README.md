@@ -16,7 +16,7 @@ We extend the original work by:
 - Dry Run Check:Before training, the dry_run_check() ensures your data, tokenizer, and batch sizes work as expected — saving time and debugging effort.
 - Reproducible Evaluation:The script compare_results.py parses training logs and compares metrics like Accuracy, Precision, Recall, and F1
 ## Project Stucture
-    ```bash
+    
     ├── sheepdog_train.py             # Main training script (with our improvements)
     ├── utils/
     │   ├── load_data.py              # Data loaders and preprocessing
