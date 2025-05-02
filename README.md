@@ -10,24 +10,7 @@ We extend the original work by:
 - Implementing a dry run pipeline check for robust model debugging.
 
 - Reproducing results and showing accuracy and F1 improvements.
-  
-# Project Structure
 
-   ├── sheepdog_train.py             # Main training script (with our improvements)
-   ├── utils/
-   │   ├── load_data.py              # Data loaders and preprocessing
-   ├── logs/
-   │   ├── log_politifact_sheepdog  # Original logs
-   │   └── log_politifact_Pretrained-LM  # Improved logs
-   ├── data/
-   │   ├── news_articles/            # Original and sampled datasets
-   │   └── reframings/              # Style-based augmented data
-   ├── checkpoints/                 # Saved model files
-   ├── train.sh                     # Shell script to start training
-   ├── compare_results.py           # Compares original vs improved model results
-   ├── create_small_dataset.py      # Creates small datasets for debugging
-   ├── inspect_dataset.py           # Helps inspect data structure
-   └── README.md
 # improved Features
 - Content Filtering: Replaces clickbait phrases (e.g., "BREAKING" → "[BREAKING]"), normalizes punctuation, and converts ALL CAPS to neutral casing. Implemented via clean_article() to reduce style bias in training.
 - Dry Run Check:Before training, the dry_run_check() ensures your data, tokenizer, and batch sizes work as expected — saving time and debugging effort.
@@ -46,18 +29,6 @@ We extend the original work by:
   sh train.sh
 4. Compare Original vs Modified Results
    python compare_results.py
-
-# Sample Results
-   ----------------------------------------
-   Metric     |   Original |   Filtered
-   ----------------------------------------
-   Accuracy   |     0.8844 |     0.9500
-   Precision  |     0.8915 |     0.9583
-   Recall     |     0.8844 |     0.9444
-   F1         |     0.8839 |     0.9488
-   ----------------------------------------
-- These improvements reflect better generalization and resistance to LLM-style restyling attacks.
-
 # Contributors
 - Amrutha Damera: Content filtering, training improvements, evaluation
 - Sakshith – Dry run checker, pipeline reliability
