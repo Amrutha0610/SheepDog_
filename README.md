@@ -12,7 +12,7 @@ We extend the original work by:
 - Reproducing results and showing accuracy and F1 improvements.
   
 # Project Structure
--
+
    ├── sheepdog_train.py             # Main training script (with our improvements)
    ├── utils/
    │   ├── load_data.py              # Data loaders and preprocessing
@@ -48,7 +48,7 @@ We extend the original work by:
    python compare_results.py
 
 # Sample Results
-  - ----------------------------------------
+   ----------------------------------------
    Metric     |   Original |   Filtered
    ----------------------------------------
    Accuracy   |     0.8844 |     0.9500
