@@ -23,12 +23,14 @@ We extend the original work by:
 - numpy==1.22.4
 - Create a Python 3.7 environment and install packages via pip install -r requirements.txt.
 # How to Run
-1. Run a dry check (optional but recommended)
-   python sheepdog_train.py --use_filtering
+1. Navigate to the extracted folder or clone the repo
+   - git clone https://git.txstate.edu/vma61/SheepDogMain.git
+2. Run a dry check (optional but recommended)
+   "python sheepdog_train.py --use_filtering"
 3. Start Training
-  sh train.sh
+  "sh train.sh"
 4. Compare Original vs Modified Results
-   python compare_results.py
+   "python compare_results.py"
 # Contributors
 - Amrutha Damera: Content filtering, training improvements, evaluation
 - Sakshith – Dry run checker, pipeline reliability
