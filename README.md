@@ -22,18 +22,23 @@ We extend the original work by:
 - transformers==4.13.0
 - numpy==1.22.4  
 - install them with:
-   "pip install -r requirements.txt"
+      ```bash
+  pip install -r requirements.txt
+   
 ### How to Run
 1. Navigate to the extracted folder or clone the repo
    ```bash
    git clone https://git.txstate.edu/vma61/SheepDogMain.git
    cd SheepDogMain
 3. Run a dry check (optional but recommended)
-   "python sheepdog_train.py --use_filtering"
+    ```bash
+    python sheepdog_train.py --use_filtering
 4. Start Training
-  "sh train.sh"
+    ```bash
+    sh train.sh
 5. Compare Original vs Modified Results
-   "python compare_results.py"
+    ```bash
+    python compare_results.py
 # Contributors
 - Amrutha Damera: Content filtering, training improvements, evaluation
 - Sakshith – Dry run checker, pipeline reliability
