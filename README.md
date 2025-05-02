@@ -21,8 +21,8 @@ We extend the original work by:
 - torch==1.10.0
 - transformers==4.13.0
 - numpy==1.22.4  
-```bash
-   pip install -r requirements.txt```
+- install them with:
+   "pip install -r requirements.txt"
 ### How to Run
 1. Navigate to the extracted folder or clone the repo
    ```bash
