@@ -53,7 +53,7 @@ We extend the original work by:
      python -m venv venv
      source env/bin/activate or
      venv\Scripts\activate # for windows
-4. Run a dry check (optional but recommended)
+4. Run a dry check 
     ```bash
     python sheepdog_train.py --use_filtering
 5. Start Training
