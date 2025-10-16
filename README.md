@@ -13,8 +13,8 @@ We extend the original work by:
 
 ## improved Features
 - Content Filtering: Replaces clickbait phrases (e.g., "BREAKING" → "[BREAKING]"), normalizes punctuation, and converts ALL CAPS to neutral casing. Implemented via clean_article() to reduce style bias in training.
-- Dry Run Check:Before training, the dry_run_check() ensures your data, tokenizer, and batch sizes work as expected — saving time and debugging effort.
-- Reproducible Evaluation:The script compare_results.py parses training logs and compares metrics like Accuracy, Precision, Recall, and F1
+- Dry Run Check: Before training, the dry_run_check() ensures your data, tokenizer, and batch sizes work as expected — saving time and debugging effort.
+- Reproducible Evaluation: The script compare_results.py parses training logs and compares metrics like Accuracy, Precision, Recall, and F1
 ## Project Stucture
     
     ├── sheepdog_train.py             # Main training script (with our improvements)
@@ -62,7 +62,5 @@ We extend the original work by:
 6. Compare Original vs Modified Results
     ```bash
     python compare_results.py
-# Contributors
-- Amrutha Damera: Content filtering, training improvements, evaluation
-- Sakshith – Dry run checker, pipeline reliability
+
 
