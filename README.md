@@ -1,17 +1,17 @@
 # SheepDogMain
 # SheepDog Enhanced — Robust Fake News Detection
 ## Overview
-This project reproduces and improves the SheepDog model from KDD 2024, which detects fake news by focusing on content rather than style. Modern LLMs can disguise fake content by mimicking journalistic tone, which makes traditional detectors unreliable. SheepDog addresses this via style-agnostic training, LLM-reframings, and fine-grained content attribution.
+This project reproduces and improves the SheepDog model from KDD 2024, which detects fake news by focusing on content rather than style. Modern LLMs can disguise fake content by mimicking journalistic tone, which makes traditional detectors unreliable. SheepDog addresses this via style agnostic training, LLM-reframings, and fine-grained content attribution.
 
 We extend the original work by:
 
-- Adding style-cleaning preprocessing to reduce reliance on stylistic cues.
+- Adding style cleaning preprocessing to reduce reliance on stylistic cues.
 
 - Implementing a dry run pipeline check for robust model debugging.
 
 - Reproducing results and showing accuracy and F1 improvements.
 
-## improved Features
+## Improved Features
 - Content Filtering: Replaces clickbait phrases (e.g., "BREAKING" → "[BREAKING]"), normalizes punctuation, and converts ALL CAPS to neutral casing. Implemented via clean_article() to reduce style bias in training.
 - Dry Run Check: Before training, the dry_run_check() ensures your data, tokenizer, and batch sizes work as expected — saving time and debugging effort.
 - Reproducible Evaluation: The script compare_results.py parses training logs and compares metrics like Accuracy, Precision, Recall, and F1
